@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+  
+  <div class="background-image"></div>
+
+  <div class="game-container">
+    <h1>Guess the Number (1–50)</h1>
+
+    <p>Enter your guess:</p>
+    <input type="number" id="guessInput" min="1" max="50">
+
+    <div class="btn-group">
+      <button id="submitGuess">Submit</button>
+      <button id="hintBtn">Get a Hint</button>
+    </div>
+
+    <div class="feedback-section">
+      <p id="feedback"></p>
+      <p id="hintText"></p>
+      <p>Attempts left: <span id="attemptsLeft">5</span></p>
+      <p>Time left: <span id="timer">30</span> seconds</p>
+    </div>
+
+    <!-- ✅ Add the Restart Button here -->
+    <button id="restartBtn" style="display: none;">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ 
+
+
+</body>
+</html> 

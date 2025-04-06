@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("guess.png"); /* Replace with your image name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .game-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(240, 240, 240, 0.95); /* Light grey with slight transparency */
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #b661b9;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #444;
+  }
+  
+  input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #4CAF50;
+  }
+  
+  button {
+    padding: 12px 24px;
+    margin: 10px 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #a0d8ef; /* Light pastel blue */
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #cfeffd; /* Slightly lighter on hover */
+    transform: translateY(-2px); /* Smooth lift */
+  }
+  
+  #restartBtn {
+    background-color: #f7b7a3; /* Pastel coral */
+  }
+  
+  #restartBtn:hover {
+    background-color: #ffe0da;
+  }
+  
+  
+  #hintText, #feedback {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    min-height: 20px;
+  }
+  
+  #attemptsLeft {
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+
+  .btn-group {
+    margin-top: 10px;
+  }
+  
+  .feedback-section {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  #feedback, #hintText {
+    font-style: italic;
+    color: #666;
+    min-height: 20px;
+  }
+
+  
+
+  #restartBtn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #restartBtn:hover {
+    background-color: #d32f2f;
+  }
+  
+
+
+  #timer {
+    font-weight: bold;
+    color: #ff5722;
+  }
+
+    
+
+  #submitGuess {
+    background-color: #b8e0d2;
+  }
+  #hintBtn {
+    background-color: #ffc1cc;
+  }
+  
+
+
+
+
+ 
+  /* Background Image */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./guess.png') no-repeat center center/cover;
+  z-index: -1;
+}
